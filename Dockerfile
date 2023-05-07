@@ -1,7 +1,7 @@
-FROM httpd
-WORKDIR /var/www/html/
+FROM nginx
+WORKDIR /usr/share/nginx/
 RUN touch index.html
 RUN echo "this is in container" > index.html
 EXPOSE 80
-CMD ["httpd","-d","foreground;"]
+CMD ["nginx","-d","foreground;"]
 
