@@ -1,4 +1,5 @@
 
+
 FROM nginx
 WORKDIR /usr/share/nginx/html/
 RUN touch index.html
